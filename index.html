@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Boundary Value Testing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Boundary Value Testing</h1>
+        <form id="advancedBoundaryForm">
+            <div class="form-group">
+                <label for="username">Username (5-20 characters):</label>
+                <input type="text" id="username" name="username" required>
+                <span id="usernameError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="age">Age (0-130):</label>
+                <input type="number" id="age" name="age" required>
+                <span id="ageError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="score">Score (1-100):</label>
+                <input type="number" id="score" name="score" required>
+                <span id="scoreError" class="error-message"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+        <div class="buttons">
+            <button id="btn1" class="status-button">Button 1-15</button>
+            <button id="btn2" class="status-button">Button 25-35</button>
+            <button id="btn3" class="status-button">Button 65</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
