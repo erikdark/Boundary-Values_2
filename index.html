@@ -11,27 +11,27 @@
         <h1>Advanced Boundary Value Testing</h1>
         <form id="advancedBoundaryForm">
             <div class="form-group">
-                <label for="username">Username (5-20 characters):</label>
+                <label for="username">Username (5-15 characters):</label>
                 <input type="text" id="username" name="username" required>
                 <span id="usernameError" class="error-message"></span>
             </div>
             <div class="form-group">
-                <label for="age">Age (0-130):</label>
+                <label for="age">Age (0-120):</label>
                 <input type="number" id="age" name="age" required>
                 <span id="ageError" class="error-message"></span>
             </div>
             <div class="form-group">
-                <label for="score">Score (1-100):</label>
-                <input type="number" id="score" name="score" required>
-                <span id="scoreError" class="error-message"></span>
+                <label for="number">Number (1-100):</label>
+                <input type="number" id="number" name="number" required>
+                <span id="numberError" class="error-message"></span>
             </div>
             <button type="submit">Submit</button>
         </form>
         <div id="result"></div>
         <div class="buttons">
-            <button id="btn1" class="status-button">Button 1-15</button>
-            <button id="btn2" class="status-button">Button 25-35</button>
-            <button id="btn3" class="status-button">Button 65</button>
+            <button id="greenButton" class="color-button">Green</button>
+            <button id="yellowButton" class="color-button">Yellow</button>
+            <button id="redButton" class="color-button">Red</button>
         </div>
     </div>
     <script src="scripts.js"></script>
